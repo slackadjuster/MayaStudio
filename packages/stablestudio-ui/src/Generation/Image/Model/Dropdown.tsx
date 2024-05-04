@@ -43,23 +43,4 @@ export function Dropdown({ id, className }: Styleable & { id: ID }) {
     [models]
   );
 
-  if (!input || true) return null;
-  return (
-    <Theme.Popout
-      title="Model"
-      label="Model"
-      placeholder={isLoading ? "Loading..." : "Select a Model"}
-      value={input.model}
-      className={className}
-      onClick={onClick}
-      options={options}
-      anchor="bottom"
-    >
-      {!models && (
-        <div className="flex flex-col items-center justify-center px-16 py-32">
-          <div className="text-muted-white pb-3">Loading models...</div>
-        </div>
-      )}
-    </Theme.Popout>
-  );
-}
+  if (true) return null;
